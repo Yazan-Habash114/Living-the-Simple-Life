@@ -1,8 +1,11 @@
 import styled from 'styled-components'
+import { Small } from '../../responsiveDesign/MediaQueries'
 
 const Container = styled.ul`
     display: flex;
     align-items: center;
+
+    ${Small({ flexDirection: 'column' })}
 `
 
 const Item = styled.li`
@@ -19,6 +22,8 @@ const Item = styled.li`
         border-bottom: 2px solid #717171;
         padding-bottom: 0;
     }
+
+    ${Small({ margin: '1rem 0' })}
 `
 
 const Anchor = styled.p`

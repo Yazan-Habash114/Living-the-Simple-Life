@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Medium } from '../../responsiveDesign/MediaQueries'
 import Logo from './Logo'
 import NavItems from './NavItems'
 
@@ -7,6 +8,8 @@ const Container = styled.nav`
     display: flex;
     justify-content: space-around;
     padding: 4rem 0;
+
+    ${Medium({ flexDirection: 'column', alignItems: 'center', padding: '4rem 0' })}
 `
 
 const Navbar = () => {

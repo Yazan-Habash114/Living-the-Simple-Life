@@ -2,13 +2,18 @@ import styled from 'styled-components'
 import ContinueReading from './ContinueReading'
 import MainPostImg from '../../../assets/images/work.jpg'
 import DateAndComments from './DateAndComments'
+import { Small } from '../../../responsiveDesign/MediaQueries'
 
 const Container = styled.section`
     width: 714px;
+
+    ${Small({ width: '100%' })}
 `
 
 const Image = styled.img`
     width: 714px;
+
+    ${Small({ width: '100%' })}
 `
 
 const MainPost = () => {

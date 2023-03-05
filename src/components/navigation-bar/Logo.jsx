@@ -1,7 +1,10 @@
 import styled from 'styled-components'
+import { Medium } from '../../responsiveDesign/MediaQueries'
 
 const Container = styled.div`
     cursor: default;
+
+    ${Medium({ marginBottom: '40px' })}
 `
 
 const Header = styled.h1`
