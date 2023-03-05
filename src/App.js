@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './components/footer/Footer'
 import Main from './components/main-content/Main'
 import Navbar from './components/navigation-bar/Navbar'
 
@@ -7,6 +8,7 @@ const App = () => {
     <React.Fragment>
       <Navbar />
       <Main />
+      <Footer />
     </React.Fragment>
   )
 }
