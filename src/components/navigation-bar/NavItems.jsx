@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { Small } from '../../responsiveDesign/MediaQueries'
 
@@ -26,11 +27,6 @@ const Item = styled.li`
     ${Small({ margin: '1rem 0' })}
 `
 
-const Anchor = styled.p`
-    text-decoration: none;
-    color: #717171;
-`
-
 const NavItems = () => {
     return (
         <Container>
@@ -44,7 +40,30 @@ const NavItems = () => {
 const NavItem = ({ title }) => {
     return (
         <Item>
-            <Anchor>{title}</Anchor>
+            {
+                title === 'Home' && <NavLink to={"/"} style={({ isActive }) => ({
+                    color: isActive ? '#143774' : '#717171',
+                    textDecoration: 'none'
+                })}>
+                    Home
+                </NavLink>
+            }
+            {
+                title === 'About me' && <NavLink to={"/about-me"} style={({ isActive }) => ({
+                    color: isActive ? '#143774' : '#717171',
+                    textDecoration: 'none'
+                })}>
+                    About me
+                </NavLink>
+            }
+            {
+                title === 'Recent posts' && <NavLink to={"/recent-posts"} style={({ isActive }) => ({
+                    color: isActive ? '#143774' : '#717171',
+                    textDecoration: 'none'
+                })}>
+                    Recent posts
+                </NavLink>
+            }
         </Item>
     )
 }

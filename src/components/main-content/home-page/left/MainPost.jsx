@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import ContinueReading from './ContinueReading'
-import MainPostImg from '../../../assets/images/work.jpg'
+import MainPostImg from '../../../../assets/images/work.jpg'
 import DateAndComments from './DateAndComments'
-import { Small } from '../../../responsiveDesign/MediaQueries'
+import { Small } from '../../../../responsiveDesign/MediaQueries'
 
 const Container = styled.section`
     width: 714px;
@@ -21,6 +21,7 @@ const MainPost = () => {
         <Container>
             <Image src={MainPostImg} />
             <DateAndComments string="July 23, 2019 | 3 comments" />
+            <PostTitle>Finding simplicity in life</PostTitle>
             <PostContent />
             <ContinueReading />
         </Container>

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Small } from "../../../responsiveDesign/MediaQueries"
+import { Small } from "../../../../responsiveDesign/MediaQueries"
 import ContinueReading from "./ContinueReading"
 import DateAndComments from "./DateAndComments"
 import PostArticle from "./PostArticle"

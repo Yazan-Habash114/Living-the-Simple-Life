@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Small } from "../../../responsiveDesign/MediaQueries"
+import { Small } from "../../../../responsiveDesign/MediaQueries"
 
 const SepLine = styled.hr`
     margin-top: 2rem;

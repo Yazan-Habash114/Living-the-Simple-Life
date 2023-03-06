@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import MainContentLeft from './left/MainContentLeft'
-import MainContentRight from './Right/MainContentRight'
-import { Large, Small } from '../../responsiveDesign/MediaQueries'
+import MainContentRight from '../Right/MainContentRight'
+import { Large, Small } from '../../../responsiveDesign/MediaQueries'
 
 const Container = styled.main`
     margin: 3rem 8rem;
