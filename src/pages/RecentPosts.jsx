@@ -1,4 +1,4 @@
-import Footer from '../components/footer/Footer'
+import Footer from '../components/footer'
 import Main from '../components/main-content/home-page/Main'
 import Navbar from '../components/navigation-bar/Navbar'
 
