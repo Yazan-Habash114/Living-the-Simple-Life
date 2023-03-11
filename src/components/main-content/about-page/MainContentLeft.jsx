@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import AboutMe from "../../../assets/images/about-me.jpg"
+import { Small } from "../../../responsiveDesign/MediaQueries"
 
 const Container = styled.div``
 
@@ -8,6 +9,8 @@ const Image = styled.img`
     height: 308px;
     object-fit: cover;
     margin-bottom: 2rem;
+
+    ${Small({ width: '100%' })}
 `
 
 const Content = styled.div``
