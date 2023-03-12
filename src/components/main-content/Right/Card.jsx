@@ -3,17 +3,17 @@ import CardImage from './CardImage'
 import CardText from './CardText'
 import CardTitle from './CardTitle'
 
-const Contianer = styled.div`
+const Container = styled.div`
     padding: 42px 45px;
 `
 
 const Card = ({ cardObj }) => {
     return (
-        <Contianer>
+        <Container>
             <CardTitle cardTitle={cardObj.title} />
             <CardImage imageSource={cardObj.img} />
             <CardText cardText={cardObj.text} />
-        </Contianer>
+        </Container>
     )
 }
 
